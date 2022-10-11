@@ -1,5 +1,7 @@
-const pBrowser = document.querySelector('p');
-const pD3 = d3.select('p');
+async function getData() {
+    const data =  await d3.json('./data.json')
 
-console.log(pBrowser);
-console.log(pD3);
+    console.log(data);
+}
+
+getData()
