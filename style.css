@@ -15,3 +15,9 @@
   font-size: 16px;
   shape-rendering: geometricPrecision;
 }
+
+.chart{
+  width: 400px;
+  height: 500px;
+  background-color: #f7f7f7;
+}

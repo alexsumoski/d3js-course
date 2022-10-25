@@ -23,7 +23,7 @@ async function draw(el, scale) {
     } else if (scale === 'quantile') {
         colorScale = d3.scaleQuantile()
             .domain(dataset)
-            .range(['white', 'pink', 'red '])
+            .range(d3.schemeReds[3])
     } else if (scale === 'threshold') {
         colorScale = d3.scaleThreshold()
             .domain([45200, 135600])
@@ -34,8 +34,7 @@ async function draw(el, scale) {
         .append("svg")
         .attr("width", dimensions.width)
         .attr("height", dimensions.height)
-    
-    
+
     svg.append('g')
         .attr('transform', 'translate(2, 2)')
         .attr('stroke', 'black')
